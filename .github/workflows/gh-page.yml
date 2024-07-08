@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 on:
   push:
     branches:
-      - main  # ודא שאתה משתמש בענף הנכון
+      - gh-pages  # ודא שאתה משתמש בענף הנכון
   workflow_dispatch:
 
 permissions:
