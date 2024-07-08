@@ -1,5 +1,7 @@
 {
   "name": "project",
+  "homepage": "https://rutikind.github.io/react-try",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
