@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['gh-pages']
+    branches: ['gh-pages']  # Ensure you're pushing to the correct branch
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -36,18 +36,15 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
       - name: Install dependencies
-        working-directory: ./src/project
         run: npm install --legacy-peer-deps
       - name: Build
-        working-directory: .
         run: CI=false npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # Upload dist repository
-          path: './build'
+          path: './build'  # Make sure the path is correct
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
