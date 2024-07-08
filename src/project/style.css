@@ -1,0 +1,30 @@
+.nav {
+    text-align: center;
+    background-color: rgb(187, 50, 50);
+    height: 3rem;
+    width: 100vw;
+    font-size: large;
+    padding: 3rem;
+    justify-content: center;
+}
+
+.Link {
+    color: white;
+    margin: 2rem;
+    text-decoration: none;
+
+}
+
+.link:hover {
+    color: chartreuse;
+}
+
+/* class יצירת 
+הפעיל link שריאקט תזהה אותו ותפעיל אותו עבור ה  */
+.active {
+    color: purple;
+    font-size: larger;
+}
+#color{
+    width: 11.5vw;
+}
